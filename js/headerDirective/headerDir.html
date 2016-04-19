@@ -1,0 +1,15 @@
+<header class="nav">
+
+        <form ng-submit="getWeather(location)">
+            <input id="address" type="textbox" ng-model="location" placeholder="Find Weather By City or Zip">
+            <button type="button" id="cloud" ng-click='getWeather(location)'>Submit</button><br>
+
+        </form>
+        <span ng-click="showCurrent()">Current</span>
+        <span ng-click="showForecast()">5-Day Forecast</span>
+        <span ng-click="showAlerts()" class="alertz">Weather Advisory</span>
+        <a ui-sref="home">
+            <span>Home</home>
+        </a>
+
+</header>

@@ -1,0 +1,40 @@
+<!-- CURRENT WEATHER -->
+<div ng-show="current" class="weatherDisplay">
+    <h1>{{weather.address}}</h1>
+    <h2>{{weather.summary}}</h2>
+    <img src="{{weather.img}}" alt="" />
+    <div class="currentStats">
+        <ul>
+            <li><b>Temperature</b>: {{weather.temperature}}&deg</li>
+            <li><b>Humidity</b>: {{weather.humidity}}% </li>
+            <li><b>Wind Speed</b>: {{weather.windSpeed}}</li>
+            <li><b>Cloud Cover</b>: {{weather.cloudCover * 100}}%</li>
+        </ul>
+    </div>
+</div>
+
+    <!-- WEATHER ADVISORY ALERT -->
+    <div ng-show="alertz" class="alerts">
+        <img src="/style/images/icons/alert.png" alt="" />
+        <h2>{{weather.alerts.title.toUpperCase()}}</h2>
+        <h5>{{weather.alerts.description}}</h5>
+    </div>
+
+
+    <!-- 5 DAY FORECAST -->
+    <div ng-show="forecast" class="forecastContainer">
+        <p class="summary">{{weather.forecastSummary}}</p>
+        <div class="forecast">
+            <div ng-repeat="day in weather.fiveDay" class="day">
+                <h4>{{day.day}}</h4>
+                    <div class="forecastIcon">
+                        <img ng-src="{{day.img}}" alt="" />
+                    </div>
+                <p><span class="tempHigh">High</span>: {{day.high}}&deg F <br><span class="tempLow">Low</span>: {{day.low}}&deg F</p>
+                <p>{{day.summary}}</p>
+            </div>
+        </div>
+        <div class="chartz">
+            <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-colours="red"></canvas>
+        </div>
+    </div>
