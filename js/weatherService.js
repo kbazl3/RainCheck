@@ -39,28 +39,28 @@ angular.module("app")
                 //SET CURRENT WEATHER ICONS AND ROUTES
                 if (cityObj.icon === "clear-day") {
                     cityObj.icon = "clear";
-                    cityObj.img = style/icons/clear.png";
+                    cityObj.img = "style/icons/clear.png";
                 } else if (cityObj.icon === "partly-cloudy-day") {
                     cityObj.icon = "clear";
-                    cityObj.img = style/icons/cloudy.png";
+                    cityObj.img = "style/icons/cloudy.png";
                 } else if (cityObj.icon === "rain" || cityObj.icon === "sleet" || cityObj.icon === "hail" || cityObj.icon === "thunderstorm" || cityObj.icon === "tornado") {
                     cityObj.icon = "rainy";
-                    cityObj.img = style/icons/rain.png";
+                    cityObj.img = "style/icons/rain.png";
                 } else if (cityObj.icon === "cloudy") {
                     cityObj.icon = "cloudy";
-                    cityObj.img = style/icons/cloudy.png";
+                    cityObj.img = "style/icons/cloudy.png";
                 } else if (cityObj.icon === "snow") {
                     cityObj.icon = "snowy";
-                    cityObj.img = style/icons/snow.png";
+                    cityObj.img = "style/icons/snow.png";
                 } else if (cityObj.icon === "clear-night" || cityObj.icon === "partly-cloudy-night") {
                     cityObj.icon = "clearNight";
-                    cityObj.img = style/icons/night.png";
+                    cityObj.img = "style/icons/night.png";
                 } else if (cityObj.icon === "wind") {
                     cityObj.icon = "windy";
-                    cityObj.img = style/icons/wind.png";
+                    cityObj.img = "style/icons/wind.png";
                 } else if (cityObj.icon === "fog") {
                     cityObj.icon = "cloudy";
-                    cityObj.img = style/icons/fog.png";
+                    cityObj.img = "style/icons/fog.png";
                 }
 
                 //DETERMINE DIRECTION OF WIND
