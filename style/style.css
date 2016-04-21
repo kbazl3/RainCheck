@@ -7,6 +7,12 @@ html {
   box-sizing: inherit;
 }
 
+.hilite {
+    /*color: dodgerblue;*/
+    font-size 25px;
+    border-bottom: 6px double yellow;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -158,6 +164,7 @@ button {
 .forecast h4 {
     text-align: center;
     border-bottom: 1px solid white;
+    font-size: 25px;
 }
 
 .tempHigh {
