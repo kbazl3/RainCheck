@@ -14,7 +14,7 @@ angular.module("app")
                 url:"https://api.forecast.io/forecast/c59a5daab4fa8b0faedb9318e9cb8e14/" + lat + "," + long + '?callback=JSON_CALLBACK'
             })
             .then(function(response) {
-                // console.log('weather response: ', response.data);
+                console.log('weather response: ', response.data);
 
                 //SET PROPERTIES FOR CURRENT WEATHER
                 cityObj.summary = response.data.hourly.summary;
@@ -133,9 +133,9 @@ angular.module("app")
             var geocoder = new google.maps.Geocoder();
             geocoder.geocode({'address': city},
                 function (results, status) {
-                    // console.log('map response: ', results);
+                    console.log('map response: ', results);
                     cityObj.address = results[0].formatted_address;
-                    getWeather(results[0].geometry.bounds.R.R, results[0].geometry.bounds.j.j)
+                    getWeather(results[0].geometry.location.lat(), results[0].geometry.location.lng())
                         .then(function(response) {
                             cityObj = response;
                             dfd.resolve(cityObj);
