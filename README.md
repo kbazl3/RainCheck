@@ -1,4 +1,4 @@
-# kbazl3.github.io
+<h1>RainCheck - http://kbazl3.github.io/RainCheck/#/<h1>
 A weather app that uses the dark sky api and google geocode to allow weather search by city/zip
 
 This was a project I chose to create for my "No-Server" project at DevMountain. It's called the No-Server because it is all front end with
