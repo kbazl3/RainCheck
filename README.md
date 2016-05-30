@@ -21,6 +21,7 @@ There were a lot of different weather api's out there that I could have chosen t
 
 Thanks for taking the time to look at my work :) Feel free to reach out to me about this project or about anything else really!
 
-Twitter: https://twitter.com/KyleBarl0w
-Email: kylebarlow@musician.com
-Github: https://github.com/kbazl3
+<b>Twitter</b>: https://twitter.com/KyleBarl0w<br>
+<b>Email</b>: kylebarlow@musician.com<br>
+<b>Github</b>: https://github.com/kbazl3<br>
+<b>LinkedIn</b>: https://www.linkedin.com/in/kylebarl0w
