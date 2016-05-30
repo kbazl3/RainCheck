@@ -18,3 +18,9 @@ There were a lot of different weather api's out there that I could have chosen t
 <img src="http://www.kalmstrom.com/images/logos/Icons/JavaScript128.png">
 <img src="https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/angular-symbol-128.png">
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/19/Google_Maps_Icon.png/128px-Google_Maps_Icon.png">
+
+Thanks for taking the time to look at my work :) Feel free to reach out to me about this project or about anything else really!
+
+Twitter: https://twitter.com/KyleBarl0w
+Email: kylebarlow@musician.com
+Github: https://github.com/kbazl3
