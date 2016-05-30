@@ -1,6 +1,6 @@
 <h1> RainCheck - http://kbazl3.github.io/RainCheck/#/ </h1>
 <img src="/style/images/screenshot.png">
-Raincheck is a web based weather application that uses the dark sky API and google geocode to allow weather search by city and zip.
+Raincheck is a web based weather application that uses the <a href="https://developer.forecast.io/" dark sky API</a> and google geocode to allow weather search by city and zip.
 
 This was a project I chose to create for my "No-Server" project at DevMountain. It's called the No-Server project because it is all front end with
 no db's or servers.  I've wanted to make a weather app for sometime so I figure this would be a perfect opportunity.
@@ -13,3 +13,4 @@ as possible.
 <img src="https://cdn3.iconfinder.com/data/icons/programming/100/css_3-128.png">
 <img src="http://www.kalmstrom.com/images/logos/Icons/JavaScript128.png">
 <img src="https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/angular-symbol-128.png">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/19/Google_Maps_Icon.png/128px-Google_Maps_Icon.png">
