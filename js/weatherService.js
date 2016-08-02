@@ -133,9 +133,10 @@ angular.module("app")
             var geocoder = new google.maps.Geocoder();
             geocoder.geocode({'address': city},
                 function (results, status) {
-                    // console.log('map response: ', results);
+                    console.log('map response: ', results);
                     cityObj.address = results[0].formatted_address;
-                    getWeather(results[0].geometry.bounds.R.R, results[0].geometry.bounds.j.j)
+                    // getWeather(results[0].geometry.bounds.R.R, results[0].geometry.bounds.j.j)
+                    getWeather(results[0].geometry.location.lat(), results[0].geometry.location.lng())
                         .then(function(response) {
                             cityObj = response;
                             dfd.resolve(cityObj);
