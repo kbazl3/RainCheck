@@ -1,5 +1,5 @@
 angular.module('app')
-    .controller('locationCtrl', function($scope, $location, weatherService) {
+    .controller('locationCtrl', function($scope, $location, $state, weatherService) {
 
             //TOGGLE NAV VIEWS
         $scope.current = true;
@@ -22,7 +22,10 @@ angular.module('app')
         };
 
       $scope.weather = weatherService.sendToLocationCtrl();
-      // console.log("scope.weather", $scope.weather);
+      console.log("scope.weather", $scope.weather);
+      if (!$scope.weather.forecast) {
+        $state.go("home")
+      }
 
       // CHART DATA
       Chart.defaults.global.colours =  [  '#46BFBD', '#ff0000' ];
