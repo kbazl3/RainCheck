@@ -1,5 +1,5 @@
 angular.module('app')
-    .controller('locationCtrl', function($scope, $location, weatherService) {
+    .controller('locationCtrl', function($scope, $location, weatherService, $state) {
 
             //TOGGLE NAV VIEWS
         $scope.current = true;
@@ -24,8 +24,12 @@ angular.module('app')
       $scope.weather = weatherService.sendToLocationCtrl();
       // console.log("scope.weather", $scope.weather);
 
+      if (!$scope.weather.forecast) { //this is for fixing the bug caused by the page refresh
+          $state.go("home");
+      }
+
       // CHART DATA
-      Chart.defaults.global.colours =  [  '#46BFBD', '#ff0000' ];
+      Chart.defaults.global.colours =  [  '#46BFBD', 'red' ];
       Chart.defaults.global.scaleFontColor = "#fff";
       Chart.defaults.global.scaleLineColor = "#fff";
       Chart.defaults.global.scaleFontSize = 13;
